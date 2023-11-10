@@ -83,9 +83,28 @@ return {
         opts.section.header.val = ascii_art.header_light_bg
         opts.section.footer.val = ascii_art.footer_light_bg
       end
+      local button, get_icon = require("astronvim.utils").alpha_button, require("astronvim.utils").get_icon
+      opts.section.buttons.val[1] = button(" LDR n n", get_icon("FileNew", 2, true) .. "New File  ")
       return opts
     end,
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    dependencies = {
+      {
+        "nvim-treesitter/nvim-treesitter-context",
+        config = function ()
+          local context = require("treesitter-context")
+          context.setup()
+        end
+      },
+      "p00f/nvim-ts-rainbow"
+    },
+    config = function(plugin, opts)
+      vim.o.foldmethod="expr"
+      vim.o.foldexpr="nvim_treesitter#foldexpr()"
+    end
+  }
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
