@@ -60,7 +60,7 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
-    ["<C-i>"] = { "<C-\\><C-n>", desc = "Exit terminal mode" },
+    ["<C-t>"] = { "<C-\\><C-n>", desc = "Exit terminal mode" },
     ["<C-w>"] = { "<C-\\><C-n><C-w>", desc = "Exit terminal mode" },
   },
   v = {
