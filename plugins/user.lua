@@ -66,5 +66,19 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
     cmds = {"Trouble", "TroubleClose", "Telescope"}
+  },
+  {
+    "danymat/neogen",
+    dependencies = "nvim-treesitter/nvim-treesitter",
+    opts={
+      enabled = true,
+      languages = {
+        python = {
+          annotation_convention = "google_docstrings"
+        }
+      }
+    },
+    cmd = { "Neogen" },
+    lazy = false,
   }
 }
