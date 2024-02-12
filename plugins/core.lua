@@ -84,7 +84,7 @@ return {
         opts.section.footer.val = ascii_art.footer_light_bg
       end
       local button, get_icon = require("astronvim.utils").alpha_button, require("astronvim.utils").get_icon
-      -- opts.section.buttons.val[1] = button(" LDR n n", get_icon("FileNew", 2, true) .. "New File  ")
+      opts.section.buttons.val[1] = button(" LDR n n", get_icon("FileNew", 2, true) .. "New File  ")
       return opts
     end,
   },

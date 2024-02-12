@@ -25,8 +25,8 @@ return {
     -- lsp saga stuff
     ["<leader>lF"] = { "<cmd>Lspsaga finder<cr>", desc="Lsp Finder", silent = true, noremap = true },
     ["<leader>lk"] = { "<cmd>Lspsaga hover_doc<cr>", desc="Hover Commands", silent = true, noremap = true },
-    ["<leader>la"] = { "<cmd>Lspsaga code_action<cr>", desc="Hover Commands", silent = true, noremap = true },
-    ["<leader>lr"] = { "<cmd>Lspsaga rename<cr>", desc="Hover Commands", silent = true, noremap = true },
+    ["<leader>la"] = { "<cmd>Lspsaga code_action<cr>", desc="Lsp Code Action", silent = true, noremap = true },
+    ["<leader>lr"] = { "<cmd>Lspsaga rename<cr>", desc="Lsp Rename", silent = true, noremap = true },
     ["<leader>le"] = { "<cmd>Lspsaga show_line_diagnostics<cr>", desc="Line Diagnostics", silent = true, noremap = true },
     ["<leader>lc"] = { "<cmd>Lspsaga show_cursor_diagnostics<cr>", desc="Cursor Diagnostics", silent = true, noremap = true },
     ["<leader>ln"] = { "<cmd>Lspsaga diagnostic_jump_next<cr>", desc="Next Diagnostic", silent = true, noremap = true },
