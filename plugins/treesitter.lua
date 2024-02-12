@@ -14,5 +14,6 @@ return {
       "json"
     })
     require "nvim-treesitter.install".compilers = {"gcc99", "gcc", "cc", "clang", "cl", "zig"}
+    return opts
   end,
 }
