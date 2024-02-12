@@ -6,6 +6,8 @@ return {
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    scrolloff = 8,
+    sidescrolloff = 8,
     wrap = false, -- sets vim.opt.wrap
   },
   g = {
@@ -17,8 +19,6 @@ return {
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = true,
-    scrolloff = 8,
-    sidescrolloff = 8,
     cursorline = true,
     cursorcolumn = true,
     wildignore = "*.o,*.obj,*~,*.pyc",
