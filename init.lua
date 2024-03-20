@@ -51,6 +51,13 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
     },
+    capabilities = {
+      workspace = {
+        didChangeWatchedFiles = {
+          dynamicRegistration = true
+        }
+      }
+    }
   },
 
   -- Configure require("lazy").setup() options
